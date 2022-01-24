@@ -30,40 +30,6 @@ function GlobalStyle() {
     );
 }
 
-// function Title(props) {
-
-//     const Tag = props.tag || h1;
-//     return (
-//         <>
-//             <Tag>{props.children}</Tag>
-//             <style jsx>{`
-//             ${Tag} {
-//                 color: ${appConfig.theme.colors.neutrals['000']};
-//                 font-size: 24px;
-//                 font-weight: 600;
-//             }
-//             `}</style>
-//         </>
-//     );
-// }
-
-// Componente React
-// function HomePage() {
-//     // JSX
-//     return (
-//         <div>
-//             <GlobalStyle />
-//             <Titulo tag="h2">Boas vindas de volta!</Titulo>
-//             <h2>Discord - Alura Matrix</h2>
-//         </div>
-//     ) 
-// // }
-
-
-
-//   export default HomePage
-
-
 function Titulo(props) {
     const Tag = props.tag || 'h1';
     return (
@@ -94,7 +60,7 @@ function Titulo(props) {
 // export default HomePage
 
 export default function PaginaInicial() {
-    const username = 'peas';
+    const username = 'ibsenriou';
 
     return (
         <>
@@ -102,9 +68,9 @@ export default function PaginaInicial() {
             <Box
                 styleSheet={{
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    backgroundColor: appConfig.theme.colors.primary[500],
-                    backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
-                    backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
+                    backgroundColor: appConfig.theme.colors.primary[100],
+                    backgroundImage: 'url(https://i.ibb.co/4R3yK9C/connect.jpg)',
+                    backgroundRepeat: 'repeat', backgroundSize: 'contain', backgroundBlendMode: 'multiply',
                 }}
             >
                 <Box
@@ -119,7 +85,7 @@ export default function PaginaInicial() {
                         width: '100%', maxWidth: '700px',
                         borderRadius: '5px', padding: '32px', margin: '16px',
                         boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-                        backgroundColor: appConfig.theme.colors.neutrals[700],
+                        backgroundColor: appConfig.theme.colors.neutrals[600],
                     }}
                 >
                     {/* Formulário */}
@@ -130,7 +96,7 @@ export default function PaginaInicial() {
                             width: { xs: '100%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
                         }}
                     >
-                        <Titulo tag="h2">Boas vindas de volta!</Titulo>
+                        <Titulo tag="h2">Boas vindas ao Connectkord!</Titulo>
                         <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
                             {appConfig.name}
                         </Text>
