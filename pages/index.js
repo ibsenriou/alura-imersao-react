@@ -104,6 +104,7 @@ export default function PaginaInicial() {
                                 // Onde está o valor?
                                 const valor = event.target.value;
                                 // Trocar o valor da variável
+                                // através de React e avise quem precisa
                                 setUsername(valor);
                             }}
                             fullWidth
