@@ -15,6 +15,7 @@ export default function ChatPage() {
     - Aperta enter para enviar
     - Tem que adicionar o texto na listagem
 
+    
     // Dev
     - [X] Campo criado 
     - [X] Vamos usar o onChange usando o setState (ter if para caso seja enter limpar a variável)
